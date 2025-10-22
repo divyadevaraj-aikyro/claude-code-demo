@@ -1,0 +1,47 @@
+{
+  "claude": {
+    "model": "glm-4.6",
+    "maxTokens": 4096,
+    "temperature": 0.7
+  },
+  "todoapp": {
+    "development": {
+      "port": 8000,
+      "host": "localhost",
+      "autoOpen": true
+    },
+    "features": {
+      "maxTodoLength": 200,
+      "enableTimestamps": true,
+      "enablePersistence": true,
+      "autoSave": true
+    },
+    "ui": {
+      "theme": "light",
+      "animations": true,
+      "confirmDeleteAll": true
+    }
+  },
+  "storage": {
+    "localStorageKey": "todos",
+    "enableBackup": false,
+    "backupInterval": 300000
+  },
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Read(*)",
+      "Write(*)",
+      "Edit(*)"
+    ],
+    "deny": [
+      "Write(.env*)",
+      "Write(settings*.json)"
+    ]
+  },
+  "development": {
+    "enableDebugMode": false,
+    "logLevel": "info",
+    "enableHotReload": false
+  }
+}

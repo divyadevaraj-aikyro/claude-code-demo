@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>My Todo List</h1>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="todo-input">
+                <form id="todo-form">
+                    <div class="input-row">
+                        <input
+                            type="text"
+                            id="todo-input"
+                            placeholder="Add a new task..."
+                            required
+                            autocomplete="off"
+                        >
+                        <select id="priority-select" class="priority-select">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                        <button type="submit" id="add-btn">Add</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="todo-stats">
+                <span id="total-count">Total: 0</span>
+                <span id="completed-count">Completed: 0</span>
+                <span id="remaining-count">Remaining: 0</span>
+            </section>
+
+            <section class="todo-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </section>
+
+            <section class="todo-list">
+                <ul id="todo-list"></ul>
+            </section>
+
+            <section class="todo-actions">
+                <button id="clear-completed">Clear Completed</button>
+                <button id="clear-all">Clear All</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

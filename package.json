@@ -1,0 +1,20 @@
+{
+  "name": "claude-code-demo",
+  "version": "1.0.0",
+  "main": "screenshot.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@playwright/mcp": "^0.0.43",
+    "playwright": "^1.56.0"
+  }
+}
